@@ -1,0 +1,1 @@
+[{"statics norm": {"artefact": "statics-norm", "group": "prospero", "name": "norm", "target": "opt/norm/current"}, "lynne_app": {"artefact": "default", "group": "wix_mcloud_test_team", "name": "lynne", "target": "gcs"}}]

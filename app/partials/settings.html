@@ -1,0 +1,91 @@
+ <!-- Fixed navbar -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+ <div class="container">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#/home">Package-Builder</a>
+    <!-- <img class="navbar-brand" src="http://3.bp.blogspot.com/-qiMm8KM_npk/UKp38YOvNuI/AAAAAAAAAmI/OU1ofS8qxtE/s1600/19050334.png"></img> -->
+  </div>
+  <div id="navbar" class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+      <li><a href="#/home">Home</a></li>
+      <li><a href="#/about">About</a></li>
+      <li class="active"><a href="#/settings">settings</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Actions <span class="caret"></span></a>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#/new">New project</a></li>
+          <li><a href="#/all">View all Apps</a></li>
+          <li class="divider"></li>
+          <li class="dropdown-header">Careful!</li>
+          <li><a href="#/remove">Delete collectively</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div><!--/.nav-collapse -->
+ </div>
+</nav>
+
+ <div class="container theme-showcase" role="main">
+
+      <h1 align="center" style="font-weight:bold"> Wix MP Package Builder <img src="https://kailexness.files.wordpress.com/2011/07/bob_013.jpg" style="height:150px; position: relative; top:60px"></h1>
+
+      <div class="page-header">
+        <h1>Settings</h1>
+      </div>
+
+        <div class="col-md-10">
+          <!--Body content-->
+
+          <ul>
+            <p>settings:</p>
+            <li ng-repeat="sett in wixSettings">
+              <p>setting: {{sett.name}}</p>
+            </li>
+          </ul>
+
+        </div>
+
+      <div id="home" class="row">
+        <div class="col-md-6">
+          <table class="table table-striped" style="width:1000px">
+            <thead>
+              <tr>
+                <th>App name</th>
+                <th>app key</th>
+                <th>group</th>
+                <th>artefact</th>
+                <th>target folder</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Norm</td>
+                <td>statics norm</td>
+                <td>prospero</td>
+                <td>statics-norm</td>
+                <td>opt/norm/current/</td>
+                <td><button type="button" class="btn btn-sm btn-link">edit</button></td>
+                <td><button type="button" class="btn btn-sm btn-link">delete</button></td>
+              </tr>
+              <tr>
+                <td>Prospero</td>
+                <td>lighttpd</td>
+                <td>prospero</td>
+                <td>wix-prospero-lighttpd</td>
+                <td>opt/prospero</td>
+                <td><button type="button" class="btn btn-sm btn-link">edit</button></td>
+                <td><button type="button" class="btn btn-sm btn-link">delete</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
